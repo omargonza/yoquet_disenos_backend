@@ -1,0 +1,47 @@
+# --- DJANGO / PYTHON ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.py[cod]
+*.so
+
+# --- ENTORNO VIRTUAL ---
+venv/
+env/
+ENV/
+.venv/
+*.env
+.env.*
+.env
+
+# --- MIGRACIONES ---
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
+
+# --- ARCHIVOS DE COMPILACIÓN ---
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# --- DJANGO STATIC/MEDIA ---
+/staticfiles/
+/media/
+/media_root/
+/static_root/
+
+# --- CONFIGURACIONES SENSIBLES ---
+settings_local.py
+config.json
+secret.json
+
+# --- SISTEMA OPERATIVO ---
+.DS_Store
+Thumbs.db
+
+catalogos/*.pdf

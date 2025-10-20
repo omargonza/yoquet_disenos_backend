@@ -1,0 +1,6167 @@
+[
+  {
+    "model": "productos.categoria",
+    "pk": 1,
+    "fields": {
+      "nombre": "Cotillón",
+      "descripcion": "Productos de cotillón.",
+      "creado": "2025-10-18T20:39:25.059773"
+    }
+  },
+  {
+    "model": "productos.categoria",
+    "pk": 4,
+    "fields": {
+      "nombre": "Decoración",
+      "descripcion": "Productos de decoración.",
+      "creado": "2025-10-18T20:39:25.059773"
+    }
+  },
+  {
+    "model": "productos.categoria",
+    "pk": 3,
+    "fields": {
+      "nombre": "Fibrofacil",
+      "descripcion": "Productos de fibrofacil.",
+      "creado": "2025-10-18T20:39:25.059773"
+    }
+  },
+  {
+    "model": "productos.categoria",
+    "pk": 2,
+    "fields": {
+      "nombre": "Navidad",
+      "descripcion": "Productos de navidad.",
+      "creado": "2025-10-18T20:39:25.059773"
+    }
+  },
+  {
+    "model": "productos.categoria",
+    "pk": 5,
+    "fields": {
+      "nombre": "Souvenir",
+      "descripcion": "Productos de souvenir.",
+      "creado": "2025-10-18T20:39:25.059773"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 32,
+    "fields": {
+      "categoria": 1,
+      "nombre": "adorno para torta,",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 54,
+    "fields": {
+      "categoria": 2,
+      "nombre": "APLIQUES,ARBóL DE NAVIDAD DE",
+      "descripcion": "APLIQUES,ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA PACK POR 6 UNIDADES ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA, 40CM DE LARGO COPOS DE NIEVE DE GOMA EVA BRILLOSA, PAC",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-39-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 53,
+    "fields": {
+      "categoria": 2,
+      "nombre": "ARBOL DE NAVIDAD, 57 DE",
+      "descripcion": "ARBOL DE NAVIDAD, 57 DE LARGO POR 37 DE ANCHO. ARBOL DE NAVIDAD, 57 DE LARGO POR 27 DE ANCHO.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-38-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 6,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Bandeja",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-2.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 50,
+    "fields": {
+      "categoria": 3,
+      "nombre": "bandeja, vienen lisas o con mensajes",
+      "descripcion": "bandeja, vienen lisas o con mensajes personalizados. medidas: 15x15 por 3CM DE ALTO 20X29 POR 6CM DE ALTO 25X35 POR 7CM DE ALTO discos fibrofacil; ONDULADOS O L",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-34-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 37,
+    "fields": {
+      "categoria": 1,
+      "nombre": "banderin goma eva “mi",
+      "descripcion": "banderin goma eva “mi comunion” banderin goma eva, “feliz cumple” varios colores disponibles",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-20-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 39,
+    "fields": {
+      "categoria": 1,
+      "nombre": "banderin,",
+      "descripcion": "banderin, “feliz cumpleaños” holografico cortina metalizada, 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-22-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 36,
+    "fields": {
+      "categoria": 5,
+      "nombre": "banderines",
+      "descripcion": "banderines goma eva",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-19-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 25,
+    "fields": {
+      "categoria": 1,
+      "nombre": "bengala con",
+      "descripcion": "bengala con gibre lisas, más de 25 colores bengala holografica vela palito largo 20cm, corto 15cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-6-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 45,
+    "fields": {
+      "categoria": 1,
+      "nombre": "bengalas de humo",
+      "descripcion": "bengalas de humo rompecoco",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-28-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 35,
+    "fields": {
+      "categoria": 4,
+      "nombre": "birrete de",
+      "descripcion": "birrete de egresados de tela combo selfie: cuadro de selfie, con palabra “egresados” y cuatro apliques que pueden ser en color dorado o plateado. medi das cuadr",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-18-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 42,
+    "fields": {
+      "categoria": 5,
+      "nombre": "bolsas candy bar",
+      "descripcion": "bolsas candy bar",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-25-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 43,
+    "fields": {
+      "categoria": 5,
+      "nombre": "cañones",
+      "descripcion": "cañones lanza papeles cañones lanza papeles corazones",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-26-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 44,
+    "fields": {
+      "categoria": 5,
+      "nombre": "cañones lanza papeles,",
+      "descripcion": "cañones lanza papeles, dolares cañones lanza papeles, multicolor en 30cm y 40cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-27-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 1,
+    "fields": {
+      "categoria": 5,
+      "nombre": "CATALOGO",
+      "descripcion": "CATALOGO 11-7638-8769 @yoquetdesigns yoquetdesigns",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-1-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 21,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catálogo",
+      "descripcion": "Catálogo mayorista",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-1-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 59,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 1-1",
+      "descripcion": "CATALOGO 11-7638-8769 @yoquetdesigns yoquetdesigns",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-1-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 60,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 1-8",
+      "descripcion": "CATALOGO 11-7638-8769 @yoquetdesigns yoquetdesigns",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-1-8.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 61,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 1-9",
+      "descripcion": "CATALOGO 11-7638-8769 @yoquetdesigns yoquetdesigns",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-1-9.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 10,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-2.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 146,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-1",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-1.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 147,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-2",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-2.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 148,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-3",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-3.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 149,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-4",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-4.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 150,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-5",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-5.webp",
+      "creado": "2025-10-18T20:39:25.094226",
+      "actualizado": "2025-10-18T20:39:25.094226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 151,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-6",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 152,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-7",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 153,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-8",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 154,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 10-9",
+      "descripcion": "A r b o l e s N a v i d a d 9",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-10-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 11,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 155,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-1",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 164,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-10",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-10.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 165,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-11",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-11.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 166,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-12",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-12.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 167,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-13",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-13.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 156,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-2",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 157,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-3",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 158,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-4",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 159,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-5",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 160,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-6",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 161,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-7",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 162,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-8",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 163,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 11-9",
+      "descripcion": "E s f e r a s N a v i d a d 10",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-11-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 12,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 168,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-1",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 177,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-10",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-10.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 178,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-11",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-11.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 169,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-2",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 170,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-3",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 171,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-4",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 172,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-5",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 173,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-6",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 174,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-7",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 175,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-8",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 176,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 12-9",
+      "descripcion": "P e s e b r e s 11",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-12-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 13,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 179,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13-1",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 180,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13-2",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 181,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13-3",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 182,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13-4",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 183,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13-5",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 184,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13-6",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 185,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 13-7",
+      "descripcion": "C a j a P o r t a V i n o 12",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-13-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 14,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 186,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-1",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 187,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-2",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 188,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-3",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 189,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-4",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 190,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-5",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 191,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-6",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 192,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-7",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 193,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-8",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 194,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 14-9",
+      "descripcion": "C a j a s d e T e 13",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-14-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 15,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 195,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-1",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 196,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-2",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 197,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-3",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 198,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-4",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 199,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-5",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 200,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-6",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 201,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-7",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 202,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 15-8",
+      "descripcion": "C a n d y B a r E s t r u c t u r a s 14",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-15-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 16,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 203,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16-1",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 204,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16-2",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 205,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16-3",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 206,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16-4",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 207,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16-5",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 208,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16-6",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 209,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 16-7",
+      "descripcion": "C a s a d e m u ñ e c a s 15",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-16-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 17,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 210,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-1",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 219,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-10",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-10.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 220,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-11",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-11.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 221,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-12",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-12.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 222,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-13",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-13.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 223,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-14",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-14.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 211,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-2",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 212,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-3",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 213,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-4",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 214,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-5",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 215,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-6",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 216,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-7",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 217,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-8",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 218,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 17-9",
+      "descripcion": "M u e b l e s M i n i a t u r a 16",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-17-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 18,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 224,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18-1",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 225,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18-2",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 226,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18-3",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 227,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18-4",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 228,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18-5",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 229,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18-6",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 230,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 18-7",
+      "descripcion": "T r i p t i c o s 17",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-18-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 19,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 231,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-1",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 240,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-10",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-10.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 241,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-11",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-11.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 242,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-12",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-12.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 243,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-13",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-13.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 232,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-2",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 233,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-3",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 234,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-4",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 235,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-5",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 236,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-6",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 237,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-7",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 238,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-8",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 239,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 19-9",
+      "descripcion": "M a n d a l a s 18",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-19-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 2,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 62,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-1",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 71,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-10",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-10.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 72,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-11",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-11.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 73,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-12",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-12.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 74,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-13",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-13.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 75,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-14",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-14.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 76,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-15",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-15.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 77,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-16",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-16.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 78,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-17",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-17.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 79,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-18",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-18.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 80,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-19",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-19.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 63,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-2",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 81,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-20",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-20.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 82,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-21",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-21.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 64,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-3",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 65,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-4",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 66,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-5",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 67,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-6",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 68,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-7",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 69,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-8",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 70,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 2-9",
+      "descripcion": "T o p p e r C a k e 1",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-2-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 20,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 244,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-1",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 245,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-2",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 246,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-3",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 247,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-4",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 248,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-5",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 249,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-6",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 250,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-7",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 251,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 20-8",
+      "descripcion": "S o u v e n i r 21",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-20-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 3,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 83,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-1",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 84,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-2",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 85,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-3",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 86,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-4",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 87,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-5",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 88,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-6",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 89,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-7",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 90,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 3-8",
+      "descripcion": "T o p p e r F r o n t a l 2",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-3-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 4,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 91,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-1",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 100,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-10",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-10.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 101,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-11",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-11.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 92,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-2",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 93,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-3",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 94,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-4",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 95,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-5",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 96,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-6",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 97,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-7",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 98,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-8",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 99,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 4-9",
+      "descripcion": "P o s a t o r t a 3",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-4-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 5,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 102,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-1",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 103,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-2",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 104,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-3",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 105,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-4",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 106,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-5",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 107,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-6",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 108,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-7",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 109,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-8",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 110,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 5-9",
+      "descripcion": "D i s c o s y B a s e s 4",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-5-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 111,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-1",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 112,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-2",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 113,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-3",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 114,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-4",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 115,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-5",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 116,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-6",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 117,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-7",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 118,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-8",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 119,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo Diego 6-9",
+      "descripcion": "Bandeja Desayuno 5",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-diego-6-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 7,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 120,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-1",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 121,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-2",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 122,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-3",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-3.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 123,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-4",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-4.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 124,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-5",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-5.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 125,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-6",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-6.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 126,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-7",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-7.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 127,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-8",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-8.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 128,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 7-9",
+      "descripcion": "C a j o n e s V e r d u l e r o s 6",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-7-9.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 8,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 129,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-1",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-1.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 130,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-2",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-2.webp",
+      "creado": "2025-10-18T20:39:25.095226",
+      "actualizado": "2025-10-18T20:39:25.095226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 131,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-3",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 132,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-4",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 133,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-5",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 134,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-6",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-6.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 135,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-7",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-7.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 136,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 8-8",
+      "descripcion": "C a j a s V a r i a s 7",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-8-8.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 9,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 137,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-1",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 138,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-2",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 139,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-3",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 140,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-4",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 141,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-5",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 142,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-6",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-6.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 143,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-7",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-7.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 144,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-8",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-8.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 145,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo Diego 9-9",
+      "descripcion": "N a v i d a d 8",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-diego-9-9.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 252,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  1-1",
+      "descripcion": "Catálogo mayorista",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-1-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 288,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  10-1",
+      "descripcion": "",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-10-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 289,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  10-2",
+      "descripcion": "",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-10-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 290,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  10-3",
+      "descripcion": "",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-10-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 291,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  11-1",
+      "descripcion": "topper feliz cumple, goma eva topper central de telgopor pack x 2 unidades topper central de telgopor pack x 2 unidades",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-11-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 292,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  11-2",
+      "descripcion": "topper feliz cumple, goma eva topper central de telgopor pack x 2 unidades topper central de telgopor pack x 2 unidades",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-11-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 293,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  11-3",
+      "descripcion": "topper feliz cumple, goma eva topper central de telgopor pack x 2 unidades topper central de telgopor pack x 2 unidades",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-11-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 294,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  11-4",
+      "descripcion": "topper feliz cumple, goma eva topper central de telgopor pack x 2 unidades topper central de telgopor pack x 2 unidades",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-11-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 295,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  12-1",
+      "descripcion": "formitas pinche, con telgopor gibreado (más de 25 colores) pack por 10 unidades topper central de telgopor pack x 2 unidades pinche feliz cumple 3d todo gibread",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-12-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 296,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  12-2",
+      "descripcion": "formitas pinche, con telgopor gibreado (más de 25 colores) pack por 10 unidades topper central de telgopor pack x 2 unidades pinche feliz cumple 3d todo gibread",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-12-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 297,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  12-3",
+      "descripcion": "formitas pinche, con telgopor gibreado (más de 25 colores) pack por 10 unidades topper central de telgopor pack x 2 unidades pinche feliz cumple 3d todo gibread",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-12-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 298,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  12-4",
+      "descripcion": "formitas pinche, con telgopor gibreado (más de 25 colores) pack por 10 unidades topper central de telgopor pack x 2 unidades pinche feliz cumple 3d todo gibread",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-12-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 299,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  13-1",
+      "descripcion": "pinche feliz cumple con gibre y telgopor grande pack x4 unidades pinche feliz cumple con gibre y telgopor mediano pack x6 unidades pinche feliz cumple con gibre",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-13-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 300,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  13-2",
+      "descripcion": "pinche feliz cumple con gibre y telgopor grande pack x4 unidades pinche feliz cumple con gibre y telgopor mediano pack x6 unidades pinche feliz cumple con gibre",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-13-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 301,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  13-3",
+      "descripcion": "pinche feliz cumple con gibre y telgopor grande pack x4 unidades pinche feliz cumple con gibre y telgopor mediano pack x6 unidades pinche feliz cumple con gibre",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-13-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 302,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  13-4",
+      "descripcion": "pinche feliz cumple con gibre y telgopor grande pack x4 unidades pinche feliz cumple con gibre y telgopor mediano pack x6 unidades pinche feliz cumple con gibre",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-13-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 303,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  14-1",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 304,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  14-2",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 305,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  14-3",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 306,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  14-4",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 307,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  14-5",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 308,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  14-6",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-6.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 309,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  14-7",
+      "descripcion": "adorno para torta, camiseta, varios equipos topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-14-7.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 310,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  15-1",
+      "descripcion": "topper economico con central topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-15-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 311,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  15-2",
+      "descripcion": "topper economico con central topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-15-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 312,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  15-3",
+      "descripcion": "topper economico con central topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-15-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 313,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  16-1",
+      "descripcion": "egresados",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-16-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 314,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  17-1",
+      "descripcion": "corbata goma eva, adultos 38cm de larg o x 11 cm de ancho. banderin egresados, goma eva brillosa corbata goma eva, niños 28cm de largo x 8.5cm de ancho vincha e",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-17-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 315,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  17-2",
+      "descripcion": "corbata goma eva, adultos 38cm de larg o x 11 cm de ancho. banderin egresados, goma eva brillosa corbata goma eva, niños 28cm de largo x 8.5cm de ancho vincha e",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-17-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 316,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  17-3",
+      "descripcion": "corbata goma eva, adultos 38cm de larg o x 11 cm de ancho. banderin egresados, goma eva brillosa corbata goma eva, niños 28cm de largo x 8.5cm de ancho vincha e",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-17-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 317,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  17-4",
+      "descripcion": "corbata goma eva, adultos 38cm de larg o x 11 cm de ancho. banderin egresados, goma eva brillosa corbata goma eva, niños 28cm de largo x 8.5cm de ancho vincha e",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-17-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 318,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  17-5",
+      "descripcion": "corbata goma eva, adultos 38cm de larg o x 11 cm de ancho. banderin egresados, goma eva brillosa corbata goma eva, niños 28cm de largo x 8.5cm de ancho vincha e",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-17-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 319,
+    "fields": {
+      "categoria": 4,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  18-1",
+      "descripcion": "birrete de egresados de tela combo selfie: cuadro de selfie, con palabra “egresados” y cuatro apliques que pueden ser en color dorado o plateado. medi das cuadr",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-18-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 320,
+    "fields": {
+      "categoria": 4,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  18-2",
+      "descripcion": "birrete de egresados de tela combo selfie: cuadro de selfie, con palabra “egresados” y cuatro apliques que pueden ser en color dorado o plateado. medi das cuadr",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-18-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 321,
+    "fields": {
+      "categoria": 4,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  18-3",
+      "descripcion": "birrete de egresados de tela combo selfie: cuadro de selfie, con palabra “egresados” y cuatro apliques que pueden ser en color dorado o plateado. medi das cuadr",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-18-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 322,
+    "fields": {
+      "categoria": 4,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  18-4",
+      "descripcion": "birrete de egresados de tela combo selfie: cuadro de selfie, con palabra “egresados” y cuatro apliques que pueden ser en color dorado o plateado. medi das cuadr",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-18-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 323,
+    "fields": {
+      "categoria": 4,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  18-5",
+      "descripcion": "birrete de egresados de tela combo selfie: cuadro de selfie, con palabra “egresados” y cuatro apliques que pueden ser en color dorado o plateado. medi das cuadr",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-18-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 324,
+    "fields": {
+      "categoria": 4,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  18-6",
+      "descripcion": "birrete de egresados de tela combo selfie: cuadro de selfie, con palabra “egresados” y cuatro apliques que pueden ser en color dorado o plateado. medi das cuadr",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-18-6.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 325,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  19-1",
+      "descripcion": "banderines goma eva",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-19-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 253,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  2-1",
+      "descripcion": "velas y toppers",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-2-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 326,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  20-1",
+      "descripcion": "banderin goma eva “mi comunion” banderin goma eva, “feliz cumple” varios colores disponibles",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-20-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 327,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  20-2",
+      "descripcion": "banderin goma eva “mi comunion” banderin goma eva, “feliz cumple” varios colores disponibles",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-20-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 328,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  20-3",
+      "descripcion": "banderin goma eva “mi comunion” banderin goma eva, “feliz cumple” varios colores disponibles",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-20-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 329,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  20-4",
+      "descripcion": "banderin goma eva “mi comunion” banderin goma eva, “feliz cumple” varios colores disponibles",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-20-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 330,
+    "fields": {
+      "categoria": 4,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  21-1",
+      "descripcion": "decoración y fiesta",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-21-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 331,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  22-1",
+      "descripcion": "banderin, “feliz cumpleaños” holografico cortina metalizada, 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-22-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 332,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  22-2",
+      "descripcion": "banderin, “feliz cumpleaños” holografico cortina metalizada, 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-22-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 333,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  22-3",
+      "descripcion": "banderin, “feliz cumpleaños” holografico cortina metalizada, 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-22-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 334,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  22-4",
+      "descripcion": "banderin, “feliz cumpleaños” holografico cortina metalizada, 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-22-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 335,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  23-1",
+      "descripcion": "cortina metalizada, cuadrados 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-23-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 336,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  23-2",
+      "descripcion": "cortina metalizada, cuadrados 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-23-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 337,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  23-3",
+      "descripcion": "cortina metalizada, cuadrados 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-23-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 338,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  24-1",
+      "descripcion": "laminas comestibles para tortas, más de 50 diseños disponibles.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-24-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 339,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  24-2",
+      "descripcion": "laminas comestibles para tortas, más de 50 diseños disponibles.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-24-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 340,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  24-3",
+      "descripcion": "laminas comestibles para tortas, más de 50 diseños disponibles.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-24-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 341,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  24-4",
+      "descripcion": "laminas comestibles para tortas, más de 50 diseños disponibles.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-24-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 342,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  24-5",
+      "descripcion": "laminas comestibles para tortas, más de 50 diseños disponibles.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-24-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 343,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  25-1",
+      "descripcion": "bolsas candy bar",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-25-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 344,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  25-2",
+      "descripcion": "bolsas candy bar",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-25-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 345,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  25-3",
+      "descripcion": "bolsas candy bar",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-25-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 346,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  25-4",
+      "descripcion": "bolsas candy bar",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-25-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 347,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  25-5",
+      "descripcion": "bolsas candy bar",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-25-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 348,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  26-1",
+      "descripcion": "cañones lanza papeles cañones lanza papeles corazones",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-26-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 349,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  26-2",
+      "descripcion": "cañones lanza papeles cañones lanza papeles corazones",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-26-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 350,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  26-3",
+      "descripcion": "cañones lanza papeles cañones lanza papeles corazones",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-26-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 351,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  27-1",
+      "descripcion": "cañones lanza papeles, dolares cañones lanza papeles, multicolor en 30cm y 40cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-27-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 352,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  27-2",
+      "descripcion": "cañones lanza papeles, dolares cañones lanza papeles, multicolor en 30cm y 40cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-27-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 353,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  27-3",
+      "descripcion": "cañones lanza papeles, dolares cañones lanza papeles, multicolor en 30cm y 40cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-27-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 354,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  28-1",
+      "descripcion": "bengalas de humo rompecoco",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-28-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 355,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  28-2",
+      "descripcion": "bengalas de humo rompecoco",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-28-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 356,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  28-3",
+      "descripcion": "bengalas de humo rompecoco",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-28-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 357,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  29-1",
+      "descripcion": "globos",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-29-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 254,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  3-1",
+      "descripcion": "Vela Nº Parafina relieve, toda gibreada, más de 25 colores vela nº , relieve coloreada más de 25 colores Vela Nº Parafina relieve, toda gibreada. más de 25 colo",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-3-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 255,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  3-2",
+      "descripcion": "Vela Nº Parafina relieve, toda gibreada, más de 25 colores vela nº , relieve coloreada más de 25 colores Vela Nº Parafina relieve, toda gibreada. más de 25 colo",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-3-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 256,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  3-3",
+      "descripcion": "Vela Nº Parafina relieve, toda gibreada, más de 25 colores vela nº , relieve coloreada más de 25 colores Vela Nº Parafina relieve, toda gibreada. más de 25 colo",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-3-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 257,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  3-4",
+      "descripcion": "Vela Nº Parafina relieve, toda gibreada, más de 25 colores vela nº , relieve coloreada más de 25 colores Vela Nº Parafina relieve, toda gibreada. más de 25 colo",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-3-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 258,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  3-5",
+      "descripcion": "Vela Nº Parafina relieve, toda gibreada, más de 25 colores vela nº , relieve coloreada más de 25 colores Vela Nº Parafina relieve, toda gibreada. más de 25 colo",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-3-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 358,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  30-1",
+      "descripcion": "globos chrome 10 unidades, 11'’/28cm globos decorador 25 unidades, 12'’/31cm globos metalizado 25 unidades, 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-30-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 359,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  30-2",
+      "descripcion": "globos chrome 10 unidades, 11'’/28cm globos decorador 25 unidades, 12'’/31cm globos metalizado 25 unidades, 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-30-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 360,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  30-3",
+      "descripcion": "globos chrome 10 unidades, 11'’/28cm globos decorador 25 unidades, 12'’/31cm globos metalizado 25 unidades, 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-30-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 361,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  30-4",
+      "descripcion": "globos chrome 10 unidades, 11'’/28cm globos decorador 25 unidades, 12'’/31cm globos metalizado 25 unidades, 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-30-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 362,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  31-1",
+      "descripcion": "globos perlados 25 unidades, 9'’/23cm globos lisos 25 unidades, 9'’/23cm globos pastel, 25 unidades de 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-31-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 363,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  31-2",
+      "descripcion": "globos perlados 25 unidades, 9'’/23cm globos lisos 25 unidades, 9'’/23cm globos pastel, 25 unidades de 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-31-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 364,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  31-3",
+      "descripcion": "globos perlados 25 unidades, 9'’/23cm globos lisos 25 unidades, 9'’/23cm globos pastel, 25 unidades de 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-31-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 365,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  31-4",
+      "descripcion": "globos perlados 25 unidades, 9'’/23cm globos lisos 25 unidades, 9'’/23cm globos pastel, 25 unidades de 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-31-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 366,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  32-1",
+      "descripcion": "globos números metalizados 32'’ solo plateados globos metalizados 16\",rosa gold, plateados y dorados globos de formas metalizados, disponibles en 5'’, 10'’, 18'",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-32-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 367,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  32-2",
+      "descripcion": "globos números metalizados 32'’ solo plateados globos metalizados 16\",rosa gold, plateados y dorados globos de formas metalizados, disponibles en 5'’, 10'’, 18'",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-32-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 368,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  32-3",
+      "descripcion": "globos números metalizados 32'’ solo plateados globos metalizados 16\",rosa gold, plateados y dorados globos de formas metalizados, disponibles en 5'’, 10'’, 18'",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-32-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 369,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  32-4",
+      "descripcion": "globos números metalizados 32'’ solo plateados globos metalizados 16\",rosa gold, plateados y dorados globos de formas metalizados, disponibles en 5'’, 10'’, 18'",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-32-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 370,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  32-5",
+      "descripcion": "globos números metalizados 32'’ solo plateados globos metalizados 16\",rosa gold, plateados y dorados globos de formas metalizados, disponibles en 5'’, 10'’, 18'",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-32-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 371,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  32-6",
+      "descripcion": "globos números metalizados 32'’ solo plateados globos metalizados 16\",rosa gold, plateados y dorados globos de formas metalizados, disponibles en 5'’, 10'’, 18'",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-32-6.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 372,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  33-1",
+      "descripcion": "fibrofacil",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-33-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 373,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  34-1",
+      "descripcion": "bandeja, vienen lisas o con mensajes personalizados. medidas: 15x15 por 3CM DE ALTO 20X29 POR 6CM DE ALTO 25X35 POR 7CM DE ALTO discos fibrofacil; ONDULADOS O L",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-34-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 374,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  34-2",
+      "descripcion": "bandeja, vienen lisas o con mensajes personalizados. medidas: 15x15 por 3CM DE ALTO 20X29 POR 6CM DE ALTO 25X35 POR 7CM DE ALTO discos fibrofacil; ONDULADOS O L",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-34-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 375,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  34-3",
+      "descripcion": "bandeja, vienen lisas o con mensajes personalizados. medidas: 15x15 por 3CM DE ALTO 20X29 POR 6CM DE ALTO 25X35 POR 7CM DE ALTO discos fibrofacil; ONDULADOS O L",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-34-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 376,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  35-1",
+      "descripcion": "PORTAVINOS,SE PUEDEN PERSONALIZAR. MEDIDAS; 33CM DE LARGO POR 10CM DE ANCHO PORTAVINOS CON DISEÑO, MEDIDAS; 40CM DE LARGO POR 8CM DE ANCHO",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-35-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 377,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  35-2",
+      "descripcion": "PORTAVINOS,SE PUEDEN PERSONALIZAR. MEDIDAS; 33CM DE LARGO POR 10CM DE ANCHO PORTAVINOS CON DISEÑO, MEDIDAS; 40CM DE LARGO POR 8CM DE ANCHO",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-35-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 378,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  35-3",
+      "descripcion": "PORTAVINOS,SE PUEDEN PERSONALIZAR. MEDIDAS; 33CM DE LARGO POR 10CM DE ANCHO PORTAVINOS CON DISEÑO, MEDIDAS; 40CM DE LARGO POR 8CM DE ANCHO",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-35-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 379,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  35-4",
+      "descripcion": "PORTAVINOS,SE PUEDEN PERSONALIZAR. MEDIDAS; 33CM DE LARGO POR 10CM DE ANCHO PORTAVINOS CON DISEÑO, MEDIDAS; 40CM DE LARGO POR 8CM DE ANCHO",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-35-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 380,
+    "fields": {
+      "categoria": 3,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  35-5",
+      "descripcion": "PORTAVINOS,SE PUEDEN PERSONALIZAR. MEDIDAS; 33CM DE LARGO POR 10CM DE ANCHO PORTAVINOS CON DISEÑO, MEDIDAS; 40CM DE LARGO POR 8CM DE ANCHO",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-35-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 381,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  36-1",
+      "descripcion": "MUEBLES PARA CASA DE MUÑECAS, SE VENDEN TODOS JUNTOS.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-36-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 382,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  36-2",
+      "descripcion": "MUEBLES PARA CASA DE MUÑECAS, SE VENDEN TODOS JUNTOS.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-36-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 383,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  36-3",
+      "descripcion": "MUEBLES PARA CASA DE MUÑECAS, SE VENDEN TODOS JUNTOS.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-36-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 384,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  36-4",
+      "descripcion": "MUEBLES PARA CASA DE MUÑECAS, SE VENDEN TODOS JUNTOS.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-36-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 385,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  36-5",
+      "descripcion": "MUEBLES PARA CASA DE MUÑECAS, SE VENDEN TODOS JUNTOS.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-36-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 386,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  36-6",
+      "descripcion": "MUEBLES PARA CASA DE MUÑECAS, SE VENDEN TODOS JUNTOS.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-36-6.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 387,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  37-1",
+      "descripcion": "NAVIDAD",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-37-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 388,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  38-1",
+      "descripcion": "ARBOL DE NAVIDAD, 57 DE LARGO POR 37 DE ANCHO. ARBOL DE NAVIDAD, 57 DE LARGO POR 27 DE ANCHO.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-38-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 389,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  38-2",
+      "descripcion": "ARBOL DE NAVIDAD, 57 DE LARGO POR 37 DE ANCHO. ARBOL DE NAVIDAD, 57 DE LARGO POR 27 DE ANCHO.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-38-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 390,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  38-3",
+      "descripcion": "ARBOL DE NAVIDAD, 57 DE LARGO POR 37 DE ANCHO. ARBOL DE NAVIDAD, 57 DE LARGO POR 27 DE ANCHO.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-38-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 391,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  39-1",
+      "descripcion": "APLIQUES,ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA PACK POR 6 UNIDADES ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA, 40CM DE LARGO COPOS DE NIEVE DE GOMA EVA BRILLOSA, PAC",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-39-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 392,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  39-2",
+      "descripcion": "APLIQUES,ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA PACK POR 6 UNIDADES ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA, 40CM DE LARGO COPOS DE NIEVE DE GOMA EVA BRILLOSA, PAC",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-39-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 393,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  39-3",
+      "descripcion": "APLIQUES,ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA PACK POR 6 UNIDADES ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA, 40CM DE LARGO COPOS DE NIEVE DE GOMA EVA BRILLOSA, PAC",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-39-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 394,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  39-4",
+      "descripcion": "APLIQUES,ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA PACK POR 6 UNIDADES ARBóL DE NAVIDAD DE GOMA EVA BRILLOSA, 40CM DE LARGO COPOS DE NIEVE DE GOMA EVA BRILLOSA, PAC",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-39-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 259,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  4-1",
+      "descripcion": "velas escudo de fútbol, varios equipos veloncito con gibre vela nºcoloreada más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-4-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 260,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  4-2",
+      "descripcion": "velas escudo de fútbol, varios equipos veloncito con gibre vela nºcoloreada más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-4-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 261,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  4-3",
+      "descripcion": "velas escudo de fútbol, varios equipos veloncito con gibre vela nºcoloreada más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-4-3.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 262,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  4-4",
+      "descripcion": "velas escudo de fútbol, varios equipos veloncito con gibre vela nºcoloreada más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-4-4.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 263,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  4-5",
+      "descripcion": "velas escudo de fútbol, varios equipos veloncito con gibre vela nºcoloreada más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-4-5.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 395,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  40-1",
+      "descripcion": "CUADRO NAVIDEÑO PARA PUERTA DE FIBROFACIL. CUADRO PARA PUERTA, PALABRA “FELIZ NAVIDAD” DE FIBROFACIL ESFERAS DE FIBROFACIL CON FRASES, MEDIDAS 10CM DE ANCHO POR",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-40-1.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 396,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  40-2",
+      "descripcion": "CUADRO NAVIDEÑO PARA PUERTA DE FIBROFACIL. CUADRO PARA PUERTA, PALABRA “FELIZ NAVIDAD” DE FIBROFACIL ESFERAS DE FIBROFACIL CON FRASES, MEDIDAS 10CM DE ANCHO POR",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-40-2.webp",
+      "creado": "2025-10-18T20:39:25.096226",
+      "actualizado": "2025-10-18T20:39:25.096226"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 397,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  40-3",
+      "descripcion": "CUADRO NAVIDEÑO PARA PUERTA DE FIBROFACIL. CUADRO PARA PUERTA, PALABRA “FELIZ NAVIDAD” DE FIBROFACIL ESFERAS DE FIBROFACIL CON FRASES, MEDIDAS 10CM DE ANCHO POR",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-40-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 398,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  40-4",
+      "descripcion": "CUADRO NAVIDEÑO PARA PUERTA DE FIBROFACIL. CUADRO PARA PUERTA, PALABRA “FELIZ NAVIDAD” DE FIBROFACIL ESFERAS DE FIBROFACIL CON FRASES, MEDIDAS 10CM DE ANCHO POR",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-40-4.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 399,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  41-1",
+      "descripcion": "PAPA NOEL DE FIROFACIL GRANDE; MEDIDAS 51cm de largo por 33cm ancho 100 LUCES LEd MULTICOLOR DE ARROZ CON ENCHUFE PAPA NOEL DE FIROFACIL CHICO; MEDIDAS 31cm de ",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-41-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 400,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  41-2",
+      "descripcion": "PAPA NOEL DE FIROFACIL GRANDE; MEDIDAS 51cm de largo por 33cm ancho 100 LUCES LEd MULTICOLOR DE ARROZ CON ENCHUFE PAPA NOEL DE FIROFACIL CHICO; MEDIDAS 31cm de ",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-41-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 401,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  41-3",
+      "descripcion": "PAPA NOEL DE FIROFACIL GRANDE; MEDIDAS 51cm de largo por 33cm ancho 100 LUCES LEd MULTICOLOR DE ARROZ CON ENCHUFE PAPA NOEL DE FIROFACIL CHICO; MEDIDAS 31cm de ",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-41-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 402,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  41-4",
+      "descripcion": "PAPA NOEL DE FIROFACIL GRANDE; MEDIDAS 51cm de largo por 33cm ancho 100 LUCES LEd MULTICOLOR DE ARROZ CON ENCHUFE PAPA NOEL DE FIROFACIL CHICO; MEDIDAS 31cm de ",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-41-4.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 403,
+    "fields": {
+      "categoria": 2,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  41-5",
+      "descripcion": "PAPA NOEL DE FIROFACIL GRANDE; MEDIDAS 51cm de largo por 33cm ancho 100 LUCES LEd MULTICOLOR DE ARROZ CON ENCHUFE PAPA NOEL DE FIROFACIL CHICO; MEDIDAS 31cm de ",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-41-5.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 404,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  42-1",
+      "descripcion": "VINCHAS NAVIDEÑAS,PACK POR 6 UNIADES",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-42-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 405,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  42-2",
+      "descripcion": "VINCHAS NAVIDEÑAS,PACK POR 6 UNIADES",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-42-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 406,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  43-1",
+      "descripcion": "YOQUET DISEÑOS @YOQUETDESINGS 011-7638-8769",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-43-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 407,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  43-2",
+      "descripcion": "YOQUET DISEÑOS @YOQUETDESINGS 011-7638-8769",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-43-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 408,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  43-3",
+      "descripcion": "YOQUET DISEÑOS @YOQUETDESINGS 011-7638-8769",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-43-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 264,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  5-1",
+      "descripcion": "bengala con gibre lisas, más de 25 colores bengala holografica vela palito largo 20cm, corto 15cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-5-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 265,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  5-2",
+      "descripcion": "bengala con gibre lisas, más de 25 colores bengala holografica vela palito largo 20cm, corto 15cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-5-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 266,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  5-3",
+      "descripcion": "bengala con gibre lisas, más de 25 colores bengala holografica vela palito largo 20cm, corto 15cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-5-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 267,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  5-4",
+      "descripcion": "bengala con gibre lisas, más de 25 colores bengala holografica vela palito largo 20cm, corto 15cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-5-4.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 268,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  6-1",
+      "descripcion": "bengala con personajes bengala con gibre combinada bengala con gibre formas, más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-6-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 269,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  6-2",
+      "descripcion": "bengala con personajes bengala con gibre combinada bengala con gibre formas, más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-6-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 270,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  6-3",
+      "descripcion": "bengala con personajes bengala con gibre combinada bengala con gibre formas, más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-6-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 271,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  6-4",
+      "descripcion": "bengala con personajes bengala con gibre combinada bengala con gibre formas, más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-6-4.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 272,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  7-1",
+      "descripcion": "vengala fantasía, varios diseños disponibles. velas con formitas gibreadas, más de 25 colores combo decotorta clubes",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-7-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 273,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  7-2",
+      "descripcion": "vengala fantasía, varios diseños disponibles. velas con formitas gibreadas, más de 25 colores combo decotorta clubes",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-7-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 274,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  7-3",
+      "descripcion": "vengala fantasía, varios diseños disponibles. velas con formitas gibreadas, más de 25 colores combo decotorta clubes",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-7-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 275,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  7-4",
+      "descripcion": "vengala fantasía, varios diseños disponibles. velas con formitas gibreadas, más de 25 colores combo decotorta clubes",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-7-4.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 276,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  7-5",
+      "descripcion": "vengala fantasía, varios diseños disponibles. velas con formitas gibreadas, más de 25 colores combo decotorta clubes",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-7-5.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 277,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  8-1",
+      "descripcion": "combo decotorta edades, liso combo decotorta combinado combo decotorta, bengala, vela palit o corto, topper y pinche formita",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-8-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 278,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  8-2",
+      "descripcion": "combo decotorta edades, liso combo decotorta combinado combo decotorta, bengala, vela palit o corto, topper y pinche formita",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-8-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 279,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  8-3",
+      "descripcion": "combo decotorta edades, liso combo decotorta combinado combo decotorta, bengala, vela palit o corto, topper y pinche formita",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-8-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 280,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  8-4",
+      "descripcion": "combo decotorta edades, liso combo decotorta combinado combo decotorta, bengala, vela palit o corto, topper y pinche formita",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-8-4.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 281,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  8-5",
+      "descripcion": "combo decotorta edades, liso combo decotorta combinado combo decotorta, bengala, vela palit o corto, topper y pinche formita",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-8-5.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 282,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  8-6",
+      "descripcion": "combo decotorta edades, liso combo decotorta combinado combo decotorta, bengala, vela palit o corto, topper y pinche formita",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-8-6.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 283,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  9-1",
+      "descripcion": "combo decotorta personajes, varios diseños",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-9-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 284,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  9-2",
+      "descripcion": "combo decotorta personajes, varios diseños",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-9-2.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 285,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  9-3",
+      "descripcion": "combo decotorta personajes, varios diseños",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-9-3.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 286,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  9-4",
+      "descripcion": "combo decotorta personajes, varios diseños",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-9-4.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 287,
+    "fields": {
+      "categoria": 5,
+      "nombre": "Catalogo mayorista Yoquet Diseños.  9-5",
+      "descripcion": "combo decotorta personajes, varios diseños",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-9-5.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 27,
+    "fields": {
+      "categoria": 1,
+      "nombre": "combo decotorta",
+      "descripcion": "combo decotorta edades, liso combo decotorta combinado combo decotorta, bengala, vela palit o corto, topper y pinche formita",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-8-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 28,
+    "fields": {
+      "categoria": 5,
+      "nombre": "combo decotorta",
+      "descripcion": "combo decotorta personajes, varios diseños",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-9-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 34,
+    "fields": {
+      "categoria": 5,
+      "nombre": "corbata goma eva,",
+      "descripcion": "corbata goma eva, adultos 38cm de larg o x 11 cm de ancho. banderin egresados, goma eva brillosa corbata goma eva, niños 28cm de largo x 8.5cm de ancho vincha e",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-17-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 40,
+    "fields": {
+      "categoria": 5,
+      "nombre": "cortina metalizada,",
+      "descripcion": "cortina metalizada, cuadrados 2mtsx1mts",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-23-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 55,
+    "fields": {
+      "categoria": 2,
+      "nombre": "CUADRO NAVIDEÑO PARA PUERTA",
+      "descripcion": "CUADRO NAVIDEÑO PARA PUERTA DE FIBROFACIL. CUADRO PARA PUERTA, PALABRA “FELIZ NAVIDAD” DE FIBROFACIL ESFERAS DE FIBROFACIL CON FRASES, MEDIDAS 10CM DE ANCHO POR",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-40-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 38,
+    "fields": {
+      "categoria": 4,
+      "nombre": "decoración",
+      "descripcion": "decoración y fiesta",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/decoracion/catalogo-mayorista-yoquet-disenos-21-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 49,
+    "fields": {
+      "categoria": 3,
+      "nombre": "fibrofacil",
+      "descripcion": "fibrofacil",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-33-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 30,
+    "fields": {
+      "categoria": 1,
+      "nombre": "formitas pinche, con",
+      "descripcion": "formitas pinche, con telgopor gibreado (más de 25 colores) pack por 10 unidades topper central de telgopor pack x 2 unidades pinche feliz cumple 3d todo gibread",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-12-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 46,
+    "fields": {
+      "categoria": 1,
+      "nombre": "globos chrome 10",
+      "descripcion": "globos chrome 10 unidades, 11'’/28cm globos decorador 25 unidades, 12'’/31cm globos metalizado 25 unidades, 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-30-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 48,
+    "fields": {
+      "categoria": 1,
+      "nombre": "globos números",
+      "descripcion": "globos números metalizados 32'’ solo plateados globos metalizados 16\",rosa gold, plateados y dorados globos de formas metalizados, disponibles en 5'’, 10'’, 18'",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-32-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 47,
+    "fields": {
+      "categoria": 1,
+      "nombre": "globos perlados 25",
+      "descripcion": "globos perlados 25 unidades, 9'’/23cm globos lisos 25 unidades, 9'’/23cm globos pastel, 25 unidades de 12'’/31cm",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-31-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 41,
+    "fields": {
+      "categoria": 5,
+      "nombre": "laminas comestibles",
+      "descripcion": "laminas comestibles para tortas, más de 50 diseños disponibles.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-24-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 52,
+    "fields": {
+      "categoria": 5,
+      "nombre": "MUEBLES PARA CASA DE",
+      "descripcion": "MUEBLES PARA CASA DE MUÑECAS, SE VENDEN TODOS JUNTOS.",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-36-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 56,
+    "fields": {
+      "categoria": 2,
+      "nombre": "PAPA NOEL DE FIROFACIL",
+      "descripcion": "PAPA NOEL DE FIROFACIL GRANDE; MEDIDAS 51cm de largo por 33cm ancho 100 LUCES LEd MULTICOLOR DE ARROZ CON ENCHUFE PAPA NOEL DE FIROFACIL CHICO; MEDIDAS 31cm de ",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/navidad/catalogo-mayorista-yoquet-disenos-41-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 31,
+    "fields": {
+      "categoria": 1,
+      "nombre": "pinche feliz cumple con",
+      "descripcion": "pinche feliz cumple con gibre y telgopor grande pack x4 unidades pinche feliz cumple con gibre y telgopor mediano pack x6 unidades pinche feliz cumple con gibre",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-13-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 51,
+    "fields": {
+      "categoria": 3,
+      "nombre": "PORTAVINOS,SE PUEDEN PERSONALIZAR.",
+      "descripcion": "PORTAVINOS,SE PUEDEN PERSONALIZAR. MEDIDAS; 33CM DE LARGO POR 10CM DE ANCHO PORTAVINOS CON DISEÑO, MEDIDAS; 40CM DE LARGO POR 8CM DE ANCHO",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/fibrofacil/catalogo-mayorista-yoquet-disenos-35-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 33,
+    "fields": {
+      "categoria": 1,
+      "nombre": "topper economico con",
+      "descripcion": "topper economico con central topper economico con central",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-15-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 29,
+    "fields": {
+      "categoria": 1,
+      "nombre": "topper feliz cumple,",
+      "descripcion": "topper feliz cumple, goma eva topper central de telgopor pack x 2 unidades topper central de telgopor pack x 2 unidades",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-11-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 23,
+    "fields": {
+      "categoria": 1,
+      "nombre": "Vela Nº Parafina relieve,",
+      "descripcion": "Vela Nº Parafina relieve, toda gibreada, más de 25 colores vela nº , relieve coloreada más de 25 colores Vela Nº Parafina relieve, toda gibreada. más de 25 colo",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-3-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 24,
+    "fields": {
+      "categoria": 1,
+      "nombre": "velas escudo de fútbol,",
+      "descripcion": "velas escudo de fútbol, varios equipos veloncito con gibre vela nºcoloreada más de 25 colores",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-4-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 22,
+    "fields": {
+      "categoria": 1,
+      "nombre": "velas y",
+      "descripcion": "velas y toppers",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-2-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 26,
+    "fields": {
+      "categoria": 1,
+      "nombre": "vengala fantasía, varios",
+      "descripcion": "vengala fantasía, varios diseños disponibles. velas con formitas gibreadas, más de 25 colores combo decotorta clubes",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/cotillon/catalogo-mayorista-yoquet-disenos-7-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 57,
+    "fields": {
+      "categoria": 5,
+      "nombre": "VINCHAS NAVIDEÑAS,PACK POR 6",
+      "descripcion": "VINCHAS NAVIDEÑAS,PACK POR 6 UNIADES",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-42-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 58,
+    "fields": {
+      "categoria": 5,
+      "nombre": "YOQUET DISEÑOS",
+      "descripcion": "YOQUET DISEÑOS @YOQUETDESINGS 011-7638-8769",
+      "precio": 0.0,
+      "stock": 0,
+      "destacado": false,
+      "imagen": "productos/souvenir/catalogo-mayorista-yoquet-disenos-43-1.webp",
+      "creado": "2025-10-18T20:39:25.097228",
+      "actualizado": "2025-10-18T20:39:25.097228"
+    }
+  }
+]
