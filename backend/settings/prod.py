@@ -1,5 +1,28 @@
 from .base import *
-DEBUG=False
-SECURE_PROXY_SSL_HEADER=('HTTP_X_FORWARDED_PROTO','https')
-SESSION_COOKIE_SECURE=True
-CSRF_COOKIE_SECURE=True
+import os
+
+DEBUG = False
+
+ALLOWED_HOSTS = [
+    'yoquet-disenos-backend.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://yoquet-disenos-backend.onrender.com',
+    'https://omargonza.github.io',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'https://omargonza.github.io',
+    'https://omargonza.github.io/yoquet_disenos_frontend',
+]
+
+# Seguridad
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+# Archivos estáticos
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

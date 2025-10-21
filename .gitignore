@@ -18,6 +18,7 @@ ENV/
 *.env
 .env.*
 .env
+.env.prod
 
 # --- MIGRACIONES ---
 */migrations/__pycache__/
