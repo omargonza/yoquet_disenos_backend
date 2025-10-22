@@ -48,14 +48,19 @@ TEMPLATES = [{
 }]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
+# 🧱 Configuración de base de datos (automática: local o Render)
 
-# 🧱 Base de datos (automática: local o Render)
+
+# 🧱 Configuración de base de datos (automática: local o Render)
 DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL', default='sqlite:///' + str(BASE_DIR / 'db.sqlite3')),
-        conn_max_age=600
+        conn_max_age=600,
+        ssl_require=config('DJANGO_SSL_REQUIRE', default=True, cast=bool)
     )
 }
+
+# Conexión estable y segura
 DATABASES["default"]["CONN_HEALTH_CHECKS"] = True
 DATABASES["default"]["ATOMIC_REQUESTS"] = False
 

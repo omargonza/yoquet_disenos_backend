@@ -20,7 +20,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
 ]
 
-
 # Seguridad
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
@@ -28,3 +27,6 @@ CSRF_COOKIE_SECURE = True
 
 # Archivos estáticos
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Forzamos SSL en Render
+os.environ["DJANGO_SSL_REQUIRE"] = "True"
