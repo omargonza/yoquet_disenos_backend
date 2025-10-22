@@ -25,3 +25,9 @@ services:
         value: https://yoquet-disenos-backend.onrender.com,https://omargonza.github.io
       - key: DATABASE_URL
         value: postgresql://aplicacionesgonza@gmail.com:full@1234567899@host:5432/yoquet_full
+
+buildCommand: |
+  pip install -r requirements.txt
+  python manage.py collectstatic --noinput
+  python manage.py migrate
+startCommand: gunicorn backend.wsgi:application
