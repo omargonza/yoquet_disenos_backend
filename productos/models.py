@@ -10,12 +10,12 @@ class Categoria(models.Model):
 
 class Producto(models.Model):
     categoria=models.ForeignKey(Categoria, related_name='productos', on_delete=models.CASCADE)
-    nombre=models.CharField(max_length=150)
+    nombre=models.CharField(max_length=550)
     descripcion=models.TextField(blank=True)
     precio=models.DecimalField(max_digits=10, decimal_places=2)
     stock=models.PositiveIntegerField(default=0)
     destacado=models.BooleanField(default=False)
-    imagen=models.ImageField(upload_to='productos/', blank=True, null=True)
+    imagen = models.CharField(max_length=500, blank=True, null=True)
     creado=models.DateTimeField(auto_now_add=True)
     actualizado=models.DateTimeField(auto_now=True)
     class Meta: ordering=['-destacado','nombre']

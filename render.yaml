@@ -31,3 +31,32 @@ buildCommand: |
   python manage.py collectstatic --noinput
   python manage.py migrate
 startCommand: gunicorn backend.wsgi:application
+
+services:
+  - type: web
+    name: yoquet-disenos-backend
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate --noinput
+      # Sincroniza: actualiza existentes y crea faltantes
+      python manage.py sync_cloudinary --prefix=yoquet/productos --update-existing --create-missing
+      # (Opcional) Limpia huérfanos si querés dejarlo súper prolijo:
+      # python manage.py sync_cloudinary --prefix=yoquet/productos --cleanup
+    startCommand: gunicorn backend.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: backend.settings.prod
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: DJANGO_SECRET_KEY
+        sync: false
+      - key: ALLOWED_HOSTS
+        value: yoquet-disenos-backend.onrender.com

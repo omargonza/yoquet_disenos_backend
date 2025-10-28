@@ -1,6 +1,9 @@
 from .base import *
 import os
 
+from decouple import config
+
+
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
@@ -25,3 +28,13 @@ DATABASES = {
 
 # Desactivar SSL en entorno local
 os.environ["DJANGO_SSL_REQUIRE"] = "False"
+
+
+# ☁️ Cloudinary
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME', default=''),
+    'API_KEY': config('CLOUDINARY_API_KEY', default=''),
+    'API_SECRET': config('CLOUDINARY_API_SECRET', default=''),
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_URL = '/media/'
