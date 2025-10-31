@@ -9,17 +9,17 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
 ]
-
 CSRF_TRUSTED_ORIGINS = [
     'https://yoquet-disenos-backend.onrender.com',
-    'https://omargonza.github.io',
+    'https://yoquet-disenos-frontend.onrender.com',  # ✅ agregado
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://omargonza.github.io",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "https://yoquet-disenos-frontend.onrender.com",  # ✅ agregado
+    "http://localhost:5173",  # para desarrollo con Vite
+    "http://127.0.0.1:5173",
 ]
+
 
 # Seguridad
 SECURE_SSL_REDIRECT = True
