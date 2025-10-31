@@ -52,17 +52,20 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 
 # 🧱 Configuración de base de datos (automática: local o Render)
+from decouple import config
+import dj_database_url
+
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL', default='sqlite:///' + str(BASE_DIR / 'db.sqlite3')),
-        conn_max_age=600,
-        ssl_require=config('DJANGO_SSL_REQUIRE', default=True, cast=bool)
-    )
+    'default': dj_database_url.parse(config('DATABASE_URL'))
 }
 
-# Conexión estable y segura
+# Opciones opcionales (mantienen estabilidad)
+DATABASES["default"]["CONN_MAX_AGE"] = 600
 DATABASES["default"]["CONN_HEALTH_CHECKS"] = True
 DATABASES["default"]["ATOMIC_REQUESTS"] = False
+
+print(f"🔗 Conectado a la base de datos: {DATABASES['default']['NAME']}")
+
 
 # 🔒 Validadores
 AUTH_PASSWORD_VALIDATORS = [
