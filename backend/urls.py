@@ -15,7 +15,7 @@ schema_view = get_schema_view(
         title="Yoquet Diseños API",
         default_version="v1",
         description="API de e-commerce (Django REST Framework + JWT + Cloudinary)",
-        contact=openapi.Contact(email="yoquet@disenos.com"),
+        contact=openapi.Contact(email="aplicacionesgonza@gmail.com"),
         license=openapi.License(name="MIT License"),
     ),
     public=True,
@@ -36,6 +36,10 @@ urlpatterns = [
     # 🔐 Endpoints JWT (SimpleJWT)
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+    
+    # ✅ Alias para compatibilidad con el frontend (usa el mismo view que /api/token/)
+    path("api/auth/login/", TokenObtainPairView.as_view(), name="token_login_alias"),
+
 
     # 📄 Documentación Swagger / JSON Schema
     re_path(r"^api/docs/$", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
