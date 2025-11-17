@@ -1,8 +1,10 @@
 from pathlib import Path
-from decouple import config
+from decouple import config, AutoConfig
 import dj_database_url
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+config = AutoConfig(search_path=BASE_DIR / "backend")
+
 
 # 🔐 Seguridad
 SECRET_KEY = config('DJANGO_SECRET_KEY', default='change-me')
@@ -12,15 +14,29 @@ ALLOWED_HOSTS = [h.strip() for h in ALLOWED_HOSTS.split(',')] if isinstance(ALLO
 
 # 🧩 Apps instaladas
 INSTALLED_APPS = [
-    'django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes',
-    'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
     # externas
-    'rest_framework', 'corsheaders', 'django_filters', 'drf_yasg',
-    # locales
-    'productos', 'users',
-    'cloudinary_storage',
+    'rest_framework',
+    'corsheaders',
+    'django_filters',
+    'drf_yasg',
+
+    # Cloudinary (ORDEN CORRECTO)
     'cloudinary',
+    'cloudinary_storage',
+
+    # locales
+    'productos',
+    'users',
+    'pedidos'
 ]
+
 
 
 # ⚙️ Middleware
@@ -97,11 +113,26 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [o.strip() for o in config('CORS_ALLOWED_ORIGINS', default='http://localhost:5173').split(',')]
 csrf = config('CSRF_TRUSTED_ORIGINS', default='')
 CSRF_TRUSTED_ORIGINS = [o.strip() for o in csrf.split(',')] if csrf else []
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_HEADERS = [
+    'authorization',
+    'content-type',
+    'accept',
+    'origin',
+    'user-agent',
+]
+
+CORS_EXPOSE_HEADERS = ["Authorization"]
 
 # ⚙️ DRF
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',),
-    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticatedOrReadOnly',),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    ),
     'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
         'rest_framework.filters.OrderingFilter',
@@ -110,13 +141,26 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 16,
 }
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=7),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
+
+    # 👇 ESTO ES LO QUE TE FALTABA  
+    "AUTH_HEADER_TYPES": ("Bearer",),  
+}
+
 
 # ☁️ Cloudinary configuration
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': config('CLOUDINARY_CLOUD_NAME', default=''),
-    'API_KEY': config('CLOUDINARY_API_KEY', default=''),
-    'API_SECRET': config('CLOUDINARY_API_SECRET', default=''),
+    "CLOUD_NAME": config("CLOUDINARY_CLOUD_NAME"),
+    "API_KEY": config("CLOUDINARY_API_KEY"),
+    "API_SECRET": config("CLOUDINARY_API_SECRET"),
 }
+CLOUDINARY_URL = config("CLOUDINARY_URL")
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
+
 print("🔥 CLOUDINARY DEBUG >>>")
 print("CLOUD_NAME:", config('CLOUDINARY_CLOUD_NAME'))
 print("API_KEY:", config('CLOUDINARY_API_KEY'))
@@ -124,3 +168,16 @@ print("API_SECRET:", config('CLOUDINARY_API_SECRET'))
 
 # === MEDIA (se usa en DEV y PRD) ===
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+import cloudinary
+
+cloudinary.config(
+    cloud_name=config("CLOUDINARY_CLOUD_NAME"),
+    api_key=config("CLOUDINARY_API_KEY"),
+    api_secret=config("CLOUDINARY_API_SECRET"),
+    secure=True
+)
+
+SIMPLE_JWT = {
+    "AUTH_HEADER_TYPES": ("Bearer",),
+}

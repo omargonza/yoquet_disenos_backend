@@ -32,10 +32,13 @@ urlpatterns = [
     # 🛍️ Apps del proyecto
     path("api/", include("productos.urls")),
     path("api/auth/", include("users.urls")),
+    path("api/pedido/", include("pedidos.urls")),
+
 
     # 🔐 Endpoints JWT (SimpleJWT)
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+    
     
     # ✅ Alias para compatibilidad con el frontend (usa el mismo view que /api/token/)
     path("api/auth/login/", TokenObtainPairView.as_view(), name="token_login_alias"),

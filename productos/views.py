@@ -1,16 +1,17 @@
-
 # productos/views.py
 from rest_framework import viewsets, permissions, filters
 from rest_framework.generics import ListAPIView
+from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework import status
 
 from .models import Categoria, Producto
 from .serializers import CategoriaSerializer, ProductoSerializer
 
 
 class IsAdminOrReadOnly(permissions.BasePermission):
-    """
-    Lectura para todos, escritura solo admin/staff.
-    """
+    """Lectura para todos, escritura solo admin/staff."""
     def has_permission(self, request, view):
         if request.method in permissions.SAFE_METHODS:
             return True
@@ -35,19 +36,13 @@ class ProductoViewSet(viewsets.ModelViewSet):
     ordering_fields = ['precio', 'nombre', 'creado', 'actualizado', 'orden']
 
     def get_serializer_context(self):
-        """
-        Para que el serializer pueda construir URLs absolutas si hace falta.
-        """
         ctx = super().get_serializer_context()
         ctx['request'] = self.request
         return ctx
 
 
 class ProductosDestacadosView(ListAPIView):
-    """
-    /api/productos/destacados/
-    Devuelve últimos destacados (máx 12).
-    """
+    """ /api/productos/destacados/ """
     serializer_class = ProductoSerializer
 
     def get_queryset(self):
@@ -61,10 +56,7 @@ class ProductosDestacadosView(ListAPIView):
 
 
 class ProductosPorCategoriaView(ListAPIView):
-    """
-    /api/productos/por-categoria/<categoria_id>/
-    Devuelve productos filtrados por categoría (con paginación).
-    """
+    """ /api/productos/por-categoria/<categoria_id>/ """
     serializer_class = ProductoSerializer
 
     def get_queryset(self):
@@ -80,3 +72,24 @@ class ProductosPorCategoriaView(ListAPIView):
         ctx = super().get_serializer_context()
         ctx['request'] = self.request
         return ctx
+
+
+class CrearPedidoView(APIView):
+    """
+    Vista de Checkout — requiere autenticación.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        usuario = request.user
+        data = request.data
+
+        items = data.get("items", [])
+        if not items:
+            return Response({"error": "El carrito está vacío."},
+                            status=status.HTTP_400_BAD_REQUEST)
+
+        return Response(
+            {"message": "Pedido creado correctamente", "usuario": usuario.username},
+            status=status.HTTP_201_CREATED
+        )
