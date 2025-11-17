@@ -1,21 +1,30 @@
+
+# productos/views.py
 from rest_framework import viewsets, permissions, filters
-from .models import Categoria, Producto
-from .serializers import CategoriaSerializer, ProductoSerializer
 from rest_framework.generics import ListAPIView
 
+from .models import Categoria, Producto
+from .serializers import CategoriaSerializer, ProductoSerializer
+
+
 class IsAdminOrReadOnly(permissions.BasePermission):
+    """
+    Lectura para todos, escritura solo admin/staff.
+    """
     def has_permission(self, request, view):
         if request.method in permissions.SAFE_METHODS:
             return True
         return bool(request.user and request.user.is_staff)
 
+
 class CategoriaViewSet(viewsets.ModelViewSet):
-    queryset=Categoria.objects.all()
-    serializer_class=CategoriaSerializer
-    permission_classes=[IsAdminOrReadOnly]
-    filter_backends=[filters.SearchFilter, filters.OrderingFilter]
-    search_fields=['nombre','descripcion']
-    ordering_fields=['nombre']
+    queryset = Categoria.objects.all()
+    serializer_class = CategoriaSerializer
+    permission_classes = [IsAdminOrReadOnly]
+    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    search_fields = ['nombre', 'descripcion']
+    ordering_fields = ['nombre', 'orden']
+
 
 class ProductoViewSet(viewsets.ModelViewSet):
     queryset = Producto.objects.select_related('categoria').all()
@@ -23,11 +32,51 @@ class ProductoViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAdminOrReadOnly]
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['nombre', 'descripcion', 'categoria__nombre']
-    ordering_fields = ['precio', 'nombre', 'creado']
+    ordering_fields = ['precio', 'nombre', 'creado', 'actualizado', 'orden']
+
+    def get_serializer_context(self):
+        """
+        Para que el serializer pueda construir URLs absolutas si hace falta.
+        """
+        ctx = super().get_serializer_context()
+        ctx['request'] = self.request
+        return ctx
 
 
 class ProductosDestacadosView(ListAPIView):
+    """
+    /api/productos/destacados/
+    Devuelve últimos destacados (máx 12).
+    """
     serializer_class = ProductoSerializer
 
     def get_queryset(self):
-        return Producto.objects.filter(destacado=True).order_by("-actualizado")[:12]
+        qs = Producto.objects.filter(destacado=True).order_by("-actualizado")
+        return qs[:12]
+
+    def get_serializer_context(self):
+        ctx = super().get_serializer_context()
+        ctx['request'] = self.request
+        return ctx
+
+
+class ProductosPorCategoriaView(ListAPIView):
+    """
+    /api/productos/por-categoria/<categoria_id>/
+    Devuelve productos filtrados por categoría (con paginación).
+    """
+    serializer_class = ProductoSerializer
+
+    def get_queryset(self):
+        categoria_id = self.kwargs['categoria_id']
+        return (
+            Producto.objects
+            .filter(categoria_id=categoria_id)
+            .select_related('categoria')
+            .order_by('orden', '-destacado', 'nombre')
+        )
+
+    def get_serializer_context(self):
+        ctx = super().get_serializer_context()
+        ctx['request'] = self.request
+        return ctx

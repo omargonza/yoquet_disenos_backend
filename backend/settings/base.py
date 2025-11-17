@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'rest_framework', 'corsheaders', 'django_filters', 'drf_yasg',
     # locales
     'productos', 'users',
+    "cloudinary", "cloudinary_storage"
 ]
 
 # ⚙️ Middleware
@@ -88,6 +89,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+
 # 🌐 CORS y CSRF (se heredan)
 CORS_ALLOWED_ORIGINS = [o.strip() for o in config('CORS_ALLOWED_ORIGINS', default='http://localhost:5173').split(',')]
 csrf = config('CSRF_TRUSTED_ORIGINS', default='')
@@ -103,7 +106,7 @@ REST_FRAMEWORK = {
         'rest_framework.filters.SearchFilter',
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 500,
+    'PAGE_SIZE': 16,
 }
 
 # ☁️ Cloudinary configuration
@@ -112,4 +115,10 @@ CLOUDINARY_STORAGE = {
     'API_KEY': config('CLOUDINARY_API_KEY', default=''),
     'API_SECRET': config('CLOUDINARY_API_SECRET', default=''),
 }
+print("🔥 CLOUDINARY DEBUG >>>")
+print("CLOUD_NAME:", config('CLOUDINARY_CLOUD_NAME'))
+print("API_KEY:", config('CLOUDINARY_API_KEY'))
+print("API_SECRET:", config('CLOUDINARY_API_SECRET'))
+
+# === MEDIA (se usa en DEV y PRD) ===
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
