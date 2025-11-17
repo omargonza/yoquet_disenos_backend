@@ -1,6 +1,6 @@
 from .base import *
 import os
-
+import sys
 
 DEBUG = False
 
@@ -9,17 +9,17 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
 ]
+
 CSRF_TRUSTED_ORIGINS = [
     'https://yoquet-disenos-backend.onrender.com',
-    'https://yoquet-disenos-frontend.onrender.com',  # ✅ agregado
+    'https://yoquet-disenos-frontend.onrender.com',
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://yoquet-disenos-frontend.onrender.com",  # ✅ agregado
-    "http://localhost:5173",  # para desarrollo con Vite
+    "https://yoquet-disenos-frontend.onrender.com",
+    "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
-
 
 # Seguridad
 SECURE_SSL_REDIRECT = True
@@ -32,12 +32,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Forzamos SSL en Render
 os.environ["DJANGO_SSL_REQUIRE"] = "True"
 
-import os
-
-INSTALLED_APPS += [
-    
-    'cloudinary_storage',
-]
+# ⚠️ IMPORTANTE: ya no agregamos cloudinary_storage aquí,
+# porque ya está en base.py
+# INSTALLED_APPS += ['cloudinary_storage']  ❌ eliminado
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
@@ -48,8 +45,6 @@ CLOUDINARY_STORAGE = {
 }
 
 MEDIA_URL = '/media/'
-
-import sys
 
 LOGGING = {
     'version': 1,
