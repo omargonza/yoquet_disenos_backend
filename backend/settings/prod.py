@@ -35,7 +35,7 @@ os.environ["DJANGO_SSL_REQUIRE"] = "True"
 import os
 
 INSTALLED_APPS += [
-    'cloudinary',
+    
     'cloudinary_storage',
 ]
 
