@@ -1,42 +1,42 @@
 from .base import *
 import os
-import sys
 
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'yoquet-disenos-backend.onrender.com',
-    'localhost',
-    '127.0.0.1',
+    "yoquet-disenos-backend.onrender.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://yoquet-disenos-backend.onrender.com',
-    'https://yoquet-disenos-frontend.onrender.com',
+    "https://yoquet-disenos-backend.onrender.com",
+    "https://yoquet-disenos-frontend.onrender.com",
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "https://yoquet-disenos-frontend.onrender.com",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
 ]
 
-# Seguridad
+# =========================================
+#  SEGURIDAD HTTP
+# =========================================
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-# Archivos estáticos
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
 
-# Forzamos SSL en Render
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+# Archivos estáticos
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+# Forzar SSL en Render
 os.environ["DJANGO_SSL_REQUIRE"] = "True"
 
-# ⚠️ IMPORTANTE: ya no agregamos cloudinary_storage aquí,
-# porque ya está en base.py
-# INSTALLED_APPS += ['cloudinary_storage']  ❌ eliminado
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# Cloudinary (en prod siempre activo)
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 CLOUDINARY_STORAGE = {
     "CLOUD_NAME": os.environ.get("CLOUDINARY_CLOUD_NAME"),
@@ -44,29 +44,16 @@ CLOUDINARY_STORAGE = {
     "API_SECRET": os.environ.get("CLOUDINARY_API_SECRET"),
 }
 
-MEDIA_URL = '/media/'
+MEDIA_URL = "/media/"
 
+# Logging seguro
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-            'datefmt': "%d/%b/%Y %H:%M:%S"
-        },
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {"class": "logging.StreamHandler"},
     },
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            'stream': sys.stdout,
-            'formatter': 'verbose',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
+    "loggers": {
+        "django": {"handlers": ["console"], "level": "INFO"},
     },
 }

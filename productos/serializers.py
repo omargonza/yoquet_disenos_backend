@@ -1,29 +1,22 @@
-# productos/serializers.py
 from rest_framework import serializers
+from django.conf import settings
 from .models import Categoria, Producto
 import re
 
 
 def clean_cloudinary_path(path: str) -> str:
     """
-    Normaliza rutas que vienen con duplicado de carpetas,
-    errores comunes, prefijos basura y rutas absolutas antiguas.
+    Normaliza rutas dañadas.
     """
-
     if not path:
         return ""
 
-    # Si es una URL válida → retornarla directamente
     if path.startswith("http://") or path.startswith("https://"):
         return path
 
-    # Limpieza general
     path = path.strip().lstrip("/")
 
-    # Quitar prefijos repetidos
     path = re.sub(r"(image/upload/)+", "image/upload/", path)
-
-    # Quitar carpetas inapropiadas agregadas por migraciones viejas
     path = path.replace("yoquet/", "")
     path = path.replace("media/", "")
     path = re.sub(r"^productos/", "", path)
@@ -33,18 +26,16 @@ def clean_cloudinary_path(path: str) -> str:
 
 def build_cloudinary_final_url(path: str) -> str:
     """
-    Construye la URL final segura a Cloudinary.
-    Evita duplicar dominio o carpeta de delivery.
+    Devuelve siempre una URL Cloudinary válida y segura.
     """
     if not path:
         return None
 
-    # Si ya es una URL Cloudinary segura → devolverla
     if "res.cloudinary.com" in path:
         return path
 
-    # Usar dominio oficial como CDN
-    cloud_name = "dfkyxmjnx"
+    # usar cloud_name desde settings (seguro)
+    cloud_name = settings.CLOUDINARY_STORAGE.get("CLOUD_NAME")
 
     return f"https://res.cloudinary.com/{cloud_name}/image/upload/{path}"
 
@@ -57,8 +48,6 @@ class CategoriaSerializer(serializers.ModelSerializer):
 
 class ProductoSerializer(serializers.ModelSerializer):
     categoria = CategoriaSerializer(read_only=True)
-
-    # Para crear o editar
     categoria_id = serializers.PrimaryKeyRelatedField(
         source="categoria", queryset=Categoria.objects.all(), write_only=True
     )
@@ -80,19 +69,12 @@ class ProductoSerializer(serializers.ModelSerializer):
         ]
 
     def get_imagen(self, obj):
-        """
-        ULTRA RESISTENTE:
-        - CloudinaryStorage
-        - URL absoluta
-        - Rutas dañadas
-        - Rutas locales
-        """
         raw = obj.imagen
 
         if not raw:
             return None
 
-        # Caso 1: Cloudinary real
+        # Caso Cloudinary real
         try:
             url = raw.url
             if url:
@@ -100,15 +82,14 @@ class ProductoSerializer(serializers.ModelSerializer):
         except Exception:
             pass
 
-        # Caso 2: String normal
         raw = str(raw).strip()
 
-        # Caso 3: URL ya completa
+        # URL absoluta
         if raw.startswith("http://") or raw.startswith("https://"):
             return raw
 
-        # Caso 4: Limpiar rutas viejas
+        # Limpiar
         cleaned = clean_cloudinary_path(raw)
 
-        # Caso 5: Armar URL Cloudinary segura
+        # Generar final segura
         return build_cloudinary_final_url(cleaned)

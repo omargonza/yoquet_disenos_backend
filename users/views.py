@@ -13,77 +13,80 @@ from rest_framework.response import Response
 from .serializers import RegisterSerializer
 
 
-# =======================
-#   REGISTRO
-# =======================
+# =============================================
+#  REGISTRO DE USUARIO
+# =============================================
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
     permission_classes = [permissions.AllowAny]
 
-
     def perform_create(self, serializer):
         user = serializer.save()
 
-        # HTML de bienvenida
-        html_message = render_to_string("emails/welcome.html", {
-            "username": user.username
-        })
+        # Evitar enviar mails sin email
+        if not user.email:
+            return
 
-        email = EmailMultiAlternatives(
-            subject="¡Bienvenido a Yoquet Diseños ✨!",
-            body="Gracias por registrarte en Yoquet Diseños.",
+        html = render_to_string("emails/welcome.html", {"username": user.username})
+
+        msg = EmailMultiAlternatives(
+            subject="¡Bienvenido a Yoquet Diseños! ✨",
+            body="Gracias por registrarte.",
             from_email=settings.DEFAULT_FROM_EMAIL,
             to=[user.email]
         )
-        email.attach_alternative(html_message, "text/html")
-        email.send()
+        msg.attach_alternative(html, "text/html")
+        msg.send()
 
 
-# =======================
-#   SOLICITAR RESET (EMAIL)
-# =======================
+# =============================================
+#  SOLICITAR RESET DE CONTRASEÑA
+# =============================================
 class RequestPasswordResetView(generics.GenericAPIView):
     permission_classes = [permissions.AllowAny]
 
     def post(self, request):
         email = request.data.get("email")
 
+        if not email:
+            return Response({"error": "Debe ingresar un correo."}, status=400)
+
+        # Seguridad: no revelar si el correo existe o no
         try:
             user = User.objects.get(email=email)
         except User.DoesNotExist:
-            return Response({"error": "No existe un usuario con ese correo."}, status=400)
+            return Response(
+                {"message": "Si el correo existe, enviamos instrucciones."},
+                status=200
+            )
 
-        # 🔗 Generar link de recuperación
+        # Construcción segura del link
         uid = urlsafe_base64_encode(str(user.pk).encode())
         token = PasswordResetTokenGenerator().make_token(user)
-
         reset_url = f"{settings.FRONTEND_URL}/reset-password/{uid}/{token}"
 
-        # 📧 Renderizar HTML del email
-        html_content = render_to_string(
-            "emails/reset_password.html",
-            {"reset_url": reset_url}
-        )
+        # Render HTML
+        html = render_to_string("emails/reset_password.html", {"reset_url": reset_url})
 
-        # 📧 Crear mensaje
-        email_message = EmailMultiAlternatives(
+        msg = EmailMultiAlternatives(
             subject="Restablecé tu contraseña - Yoquet Diseños",
-            body=f"Para restablecer tu contraseña, hacé clic acá: {reset_url}",
+            body=f"Restablecé tu contraseña aquí: {reset_url}",
             from_email=settings.DEFAULT_FROM_EMAIL,
             to=[email],
         )
-        email_message.attach_alternative(html_content, "text/html")
+        msg.attach_alternative(html, "text/html")
+        msg.send()
 
-        # 🚀 Enviar
-        email_message.send()
+        return Response(
+            {"message": "Si el correo existe, enviamos instrucciones."},
+            status=200
+        )
 
-        return Response({"message": "Enviamos un correo con instrucciones ✨"}, status=200)
 
-
-# ===============================
-#   CONFIRMAR NUEVA CONTRASEÑA
-# ===============================
+# =============================================
+#  CONFIRMAR RESET DE CONTRASEÑA
+# =============================================
 class PasswordResetConfirmView(generics.GenericAPIView):
     permission_classes = [permissions.AllowAny]
 
@@ -93,20 +96,21 @@ class PasswordResetConfirmView(generics.GenericAPIView):
         password = request.data.get("password")
 
         if not password:
-            return Response({"error": "Contraseña requerida"}, status=400)
+            return Response({"error": "Debe ingresar una contraseña."}, status=400)
 
         try:
             uid = force_str(urlsafe_base64_decode(uidb64))
             user = User.objects.get(pk=uid)
         except Exception:
-            return Response({"error": "Token inválido"}, status=400)
+            return Response({"error": "Token inválido."}, status=400)
 
         if not default_token_generator.check_token(user, token):
-            return Response({"error": "Token inválido o expirado"}, status=400)
+            return Response({"error": "Token inválido o expirado."}, status=400)
 
-        # ✔ Cambiar contraseña
         user.set_password(password)
         user.save()
 
-        return Response({"redirect": f"{settings.FRONTEND_URL}/reset-success"})
-
+        return Response(
+            {"redirect": f"{settings.FRONTEND_URL}/reset-success"},
+            status=200
+        )
