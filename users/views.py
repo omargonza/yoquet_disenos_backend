@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
-from django.contrib.auth.tokens import default_token_generator, PasswordResetTokenGenerator
-from django.utils.encoding import force_str
+from django.contrib.auth.tokens import default_token_generator
+from django.utils.encoding import force_str, force_bytes
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 
 from django.core.mail import EmailMultiAlternatives
@@ -9,13 +9,14 @@ from django.conf import settings
 
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
 
 from .serializers import RegisterSerializer
 
-
-# =============================================
-#  REGISTRO DE USUARIO
-# =============================================
+# =====================================================
+#   📌 1. REGISTRO DE USUARIO
+# =====================================================
 class RegisterView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
@@ -24,7 +25,6 @@ class RegisterView(generics.CreateAPIView):
     def perform_create(self, serializer):
         user = serializer.save()
 
-        # Evitar enviar mails sin email
         if not user.email:
             return
 
@@ -34,15 +34,15 @@ class RegisterView(generics.CreateAPIView):
             subject="¡Bienvenido a Yoquet Diseños! ✨",
             body="Gracias por registrarte.",
             from_email=settings.DEFAULT_FROM_EMAIL,
-            to=[user.email]
+            to=[user.email],
         )
         msg.attach_alternative(html, "text/html")
         msg.send()
 
 
-# =============================================
-#  SOLICITAR RESET DE CONTRASEÑA
-# =============================================
+# =====================================================
+#   📌 2. SOLICITAR RESET PASSWORD
+# =====================================================
 class RequestPasswordResetView(generics.GenericAPIView):
     permission_classes = [permissions.AllowAny]
 
@@ -52,21 +52,17 @@ class RequestPasswordResetView(generics.GenericAPIView):
         if not email:
             return Response({"error": "Debe ingresar un correo."}, status=400)
 
-        # Seguridad: no revelar si el correo existe o no
+        # Nunca revelar si existe o no
         try:
             user = User.objects.get(email=email)
         except User.DoesNotExist:
-            return Response(
-                {"message": "Si el correo existe, enviamos instrucciones."},
-                status=200
-            )
+            return Response({"message": "Si el correo existe, enviamos instrucciones."}, status=200)
 
-        # Construcción segura del link
-        uid = urlsafe_base64_encode(str(user.pk).encode())
-        token = PasswordResetTokenGenerator().make_token(user)
+        uid = urlsafe_base64_encode(force_bytes(user.pk))
+        token = default_token_generator.make_token(user)
+
         reset_url = f"{settings.FRONTEND_URL}/reset-password/{uid}/{token}"
 
-        # Render HTML
         html = render_to_string("emails/reset_password.html", {"reset_url": reset_url})
 
         msg = EmailMultiAlternatives(
@@ -78,15 +74,12 @@ class RequestPasswordResetView(generics.GenericAPIView):
         msg.attach_alternative(html, "text/html")
         msg.send()
 
-        return Response(
-            {"message": "Si el correo existe, enviamos instrucciones."},
-            status=200
-        )
+        return Response({"message": "Si el correo existe, enviamos instrucciones."}, status=200)
 
 
-# =============================================
-#  CONFIRMAR RESET DE CONTRASEÑA
-# =============================================
+# =====================================================
+#   📌 3. CONFIRMAR RESET PASSWORD
+# =====================================================
 class PasswordResetConfirmView(generics.GenericAPIView):
     permission_classes = [permissions.AllowAny]
 
@@ -110,7 +103,21 @@ class PasswordResetConfirmView(generics.GenericAPIView):
         user.set_password(password)
         user.save()
 
-        return Response(
-            {"redirect": f"{settings.FRONTEND_URL}/reset-success"},
-            status=200
-        )
+        return Response({"redirect": f"{settings.FRONTEND_URL}/reset-success"}, status=200)
+
+
+# =====================================================
+#   📌 4. ENDPOINT /auth/me
+# =====================================================
+class MeView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+        return Response({
+            "id": user.id,
+            "username": user.username,
+            "email": user.email,
+            "is_staff": user.is_staff,
+            "is_superuser": user.is_superuser,
+        })

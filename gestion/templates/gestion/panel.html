@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Gestión de Productos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        .producto {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            width: 260px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        input, select {
+            width: 100%;
+            margin-bottom: 8px;
+            padding: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0078ff;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: .7;
+        }
+        .topbar {
+            margin-bottom: 20px;
+        }
+        .save-all {
+            background: #00b34a;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Gestión de Productos</h1>
+
+<div class="topbar">
+    <button onclick="scan()">Escanear nuevas imágenes</button>
+    <button class="save-all" onclick="saveAll()">Guardar todo</button>
+</div>
+
+<div class="grid" id="productos"></div>
+
+<script>
+    // Cargar productos incompletos
+    async function load() {
+        let res = await fetch("/api/gestion/pendientes/");
+        let data = await res.json();
+
+       let html = "";
+data.forEach(prod => {
+    html += `
+    <div class="producto" data-id="${prod.id}">
+        <img src="${prod.imagen?.url || prod.imagen || ""}" class="thumb">
+
+        <input placeholder="Nombre" value="${prod.nombre}" />
+        <input placeholder="Precio" type="number" value="${prod.precio}" />
+        <select>
+            <option value="">Sin categoría</option>
+        </select>
+    </div>
+    `;
+});
+
+        document.getElementById("productos").innerHTML = html;
+    }
+
+    async function scan() {
+        alert("Escaneando imágenes...");
+        await fetch("/api/gestion/escanear/", { method: "POST" });
+        await load();
+    }
+
+    async function saveAll() {
+        let items = [];
+        document.querySelectorAll(".producto").forEach(div => {
+            let id = div.dataset.id;
+            let inputs = div.querySelectorAll("input");
+            let select = div.querySelector("select");
+
+            items.push({
+                id: id,
+                nombre: inputs[0].value,
+                precio: inputs[1].value,
+                categoria: select.value || null
+            });
+        });
+
+        let res = await fetch("/api/gestion/update/", {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(items)
+        });
+
+        alert("Productos actualizados");
+    }
+
+    load();
+</script>
+
+</body>
+</html>

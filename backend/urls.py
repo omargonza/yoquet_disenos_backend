@@ -34,19 +34,22 @@ urlpatterns = [
     # Panel Admin
     path("admin/", admin.site.urls),
 
+    # Panel HTML (provisorio, viejo)
+    path("gestion/", include("gestion.urls_html")),
+
+    # API del módulo de gestión
+    path("api/gestion/", include("gestion.urls_api")),
+
     # Apps locales
     path("api/", include("productos.urls")),
     path("api/auth/", include("users.urls")),
     path("api/pedido/", include("pedidos.urls")),
 
-    # JWT Tokens
-    # 👉 Este es el login REAL
+    # JWT
     path("api/auth/login/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
-
-    # Refresh token
     path("api/auth/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 
-    # Documentación
+    # Swagger
     re_path(
         r"^api/docs/$",
         schema_view.with_ui("swagger", cache_timeout=0),

@@ -5,9 +5,6 @@ import re
 
 
 def clean_cloudinary_path(path: str) -> str:
-    """
-    Normaliza rutas dañadas.
-    """
     if not path:
         return ""
 
@@ -16,6 +13,7 @@ def clean_cloudinary_path(path: str) -> str:
 
     path = path.strip().lstrip("/")
 
+    # Normalizaciones
     path = re.sub(r"(image/upload/)+", "image/upload/", path)
     path = path.replace("yoquet/", "")
     path = path.replace("media/", "")
@@ -25,34 +23,44 @@ def clean_cloudinary_path(path: str) -> str:
 
 
 def build_cloudinary_final_url(path: str) -> str:
-    """
-    Devuelve siempre una URL Cloudinary válida y segura.
-    """
     if not path:
         return None
 
     if "res.cloudinary.com" in path:
         return path
 
-    # usar cloud_name desde settings (seguro)
     cloud_name = settings.CLOUDINARY_STORAGE.get("CLOUD_NAME")
 
     return f"https://res.cloudinary.com/{cloud_name}/image/upload/{path}"
 
 
+# =============================================
+#   SERIALIZA CATEGORÍAS
+# =============================================
 class CategoriaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Categoria
         fields = ["id", "nombre", "descripcion"]
 
 
+# =============================================
+#   SERIALIZA PRODUCTOS
+# =============================================
 class ProductoSerializer(serializers.ModelSerializer):
     categoria = CategoriaSerializer(read_only=True)
+
     categoria_id = serializers.PrimaryKeyRelatedField(
-        source="categoria", queryset=Categoria.objects.all(), write_only=True
+        source="categoria",
+        queryset=Categoria.objects.all(),
+        write_only=True
     )
 
     imagen = serializers.SerializerMethodField()
+
+    categoria_nombre = serializers.CharField(
+        source="categoria.nombre",
+        read_only=True
+    )
 
     class Meta:
         model = Producto
@@ -66,10 +74,15 @@ class ProductoSerializer(serializers.ModelSerializer):
             "imagen",
             "categoria",
             "categoria_id",
+            "categoria_nombre",
         ]
 
     def get_imagen(self, obj):
-        raw = obj.imagen
+        # Protección completa
+        try:
+            raw = getattr(obj, "imagen", None)
+        except Exception:
+            return None
 
         if not raw:
             return None
@@ -82,14 +95,16 @@ class ProductoSerializer(serializers.ModelSerializer):
         except Exception:
             pass
 
-        raw = str(raw).strip()
+        # Convertir a string
+        try:
+            raw = str(raw).strip()
+        except Exception:
+            return None
 
-        # URL absoluta
+        # Si ya es URL absoluta
         if raw.startswith("http://") or raw.startswith("https://"):
             return raw
 
-        # Limpiar
+        # Limpiar y construir URL final
         cleaned = clean_cloudinary_path(raw)
-
-        # Generar final segura
         return build_cloudinary_final_url(cleaned)

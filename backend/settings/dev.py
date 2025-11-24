@@ -71,3 +71,9 @@ if cloud_name and api_key and api_secret:
     DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 else:
     print("⚠️ Cloudinary no configurado en dev.")
+
+
+DATABASES["vieja"] = {
+    "ENGINE": "django.db.backends.sqlite3",
+    "NAME": BASE_DIR / "db_backup.sqlite3",
+}

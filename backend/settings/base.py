@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "productos",
     "users",
     "pedidos",
+    'gestion',
 ]
 
 # =========================================
@@ -98,7 +99,7 @@ else:
         "default": dj_database_url.config(
             default=config("DATABASE_URL"),
             conn_max_age=600,
-            ssl_require=True  # 🔥 IMPORTANTE PARA RENDER
+            ssl_require=True 
         )
     }
 
@@ -204,3 +205,8 @@ EMAIL_HOST_USER = config("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
 EMAIL_USE_TLS = config("EMAIL_USE_TLS", cast=bool, default=True)
 DEFAULT_FROM_EMAIL = config("DEFAULT_FROM_EMAIL")
+
+
+import mimetypes
+mimetypes.init()
+mimetypes.add_type("image/webp", ".webp", True)
