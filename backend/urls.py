@@ -35,7 +35,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 
     # Panel HTML (provisorio, viejo)
-    path("gestion/", include("gestion.urls_html")),
+       path("gestion/", include("gestion.urls_html")),
 
     # API del módulo de gestión
     path("api/gestion/", include("gestion.urls_api")),
