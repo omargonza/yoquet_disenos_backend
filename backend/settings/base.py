@@ -133,15 +133,24 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # =========================================
-# 🌐 CORS / CSRF
+# 🌐 CORS / CSRF (VERSIÓN CORRECTA PARA PRODUCCIÓN)
 # =========================================
-FRONTEND_URL = config("FRONTEND_URL", default="http://localhost:5173")
 
-CORS_ALLOWED_ORIGINS = [FRONTEND_URL]
-CSRF_TRUSTED_ORIGINS = [FRONTEND_URL]
+FRONTEND_PROD = "https://yoquet-disenos-frontend.onrender.com"
+FRONTEND_DEV = "http://localhost:5173"
 
-# **NO** permitas todo CORS en producción
-CORS_ALLOW_ALL_ORIGINS = DEBUG
+CORS_ALLOWED_ORIGINS = [
+    FRONTEND_PROD,
+    FRONTEND_DEV,
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    FRONTEND_PROD,
+    FRONTEND_DEV,
+]
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOW_HEADERS = [
     "authorization",
@@ -151,6 +160,7 @@ CORS_ALLOW_HEADERS = [
     "user-agent",
 ]
 CORS_EXPOSE_HEADERS = ["Authorization"]
+
 
 # =========================================
 # 🔐 DRF — JWT
