@@ -98,7 +98,7 @@ else:
         "default": dj_database_url.config(
             default=config("DATABASE_URL"),
             conn_max_age=600,      # Mantiene conexiones estables
-            ssl_require=True
+            ssl_require=True,
         )
     }
 
@@ -106,7 +106,7 @@ else:
 if not DEBUG:
     DATABASES["default"]["OPTIONS"] = {
         "sslmode": "require",
-        "prepared_statements": False,   # CRÍTICO para Neon
+        "prepared_statements": False,   # necesario con Neon + pooler
         "connect_timeout": 10,
     }
 
@@ -187,7 +187,7 @@ REST_FRAMEWORK = {
         "rest_framework.filters.SearchFilter",
     ),
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
-    "PAGE_SIZE": 16,
+    "PAGE_SIZE": 30,
 }
 
 SIMPLE_JWT = {

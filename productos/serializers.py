@@ -46,7 +46,54 @@ class CategoriaSerializer(serializers.ModelSerializer):
 # =============================================
 #   SERIALIZA PRODUCTOS
 # =============================================
-class ProductoSerializer(serializers.ModelSerializer):
+class ProductoListSerializer(serializers.ModelSerializer):
+    categoria_nombre = serializers.CharField(source="categoria.nombre", read_only=True)
+    imagen = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Producto
+        fields = [
+            "id",
+            "nombre",
+            "precio",
+            "imagen",
+            "categoria_nombre",
+        ]
+
+    def get_imagen(self, obj):
+        # Protección completa
+        try:
+            raw = getattr(obj, "imagen", None)
+        except Exception:
+            return None
+
+        if not raw:
+            return None
+
+        # Caso Cloudinary real
+        try:
+            url = raw.url
+            if url:
+                return url
+        except Exception:
+            pass
+
+        # Convertir a string
+        try:
+            raw = str(raw).strip()
+        except Exception:
+            return None
+
+        # Si ya es URL absoluta
+        if raw.startswith("http://") or raw.startswith("https://"):
+            return raw
+
+        # Limpiar y construir URL final
+        cleaned = clean_cloudinary_path(raw)
+        return build_cloudinary_final_url(cleaned)
+
+
+class ProductoDetailSerializer(serializers.ModelSerializer):
     categoria = CategoriaSerializer(read_only=True)
 
     categoria_id = serializers.PrimaryKeyRelatedField(
