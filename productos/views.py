@@ -4,8 +4,11 @@ from rest_framework.generics import ListAPIView
 from rest_framework.response import Response
 
 from .models import Categoria, Producto
-from .serializers import CategoriaSerializer, ProductoSerializer, ProductoListSerializer,ProductoDetailSerializer
-
+from .serializers import (
+    CategoriaSerializer,
+    ProductoListSerializer,
+    ProductoDetailSerializer,
+)
 
 
 class IsAdminOrReadOnly(permissions.BasePermission):
@@ -31,9 +34,6 @@ class CategoriaViewSet(viewsets.ModelViewSet):
 # ============================================
 #   PRODUCTOS
 # ============================================
-# =============================================
-#   PRODUCTOS
-# ============================================
 class ProductoViewSet(viewsets.ModelViewSet):
     queryset = (
         Producto.objects.only(
@@ -54,17 +54,15 @@ class ProductoViewSet(viewsets.ModelViewSet):
     search_fields = ["nombre", "descripcion", "categoria__nombre"]
     ordering_fields = ["precio", "nombre", "creado", "actualizado", "orden"]
 
-    # Serializer por acción:
-    # - list → liviano (para masividad)
-    # - retrieve / create / update → completo
     def get_serializer_class(self):
         if self.action == "list":
             return ProductoListSerializer
         return ProductoDetailSerializer
 
+
 # ============================================
 #   PRODUCTOS DESTACADOS
-# =======================================
+# ============================================
 class ProductosDestacadosView(ListAPIView):
     serializer_class = ProductoListSerializer
 
@@ -90,17 +88,27 @@ class ProductosDestacadosView(ListAPIView):
         ctx["request"] = self.request
         return ctx
 
+
 # ============================================
 #   PRODUCTOS POR CATEGORÍA
 # ============================================
 class ProductosPorCategoriaView(ListAPIView):
-    serializer_class = ProductoSerializer
+    serializer_class = ProductoListSerializer
 
     def get_queryset(self):
         categoria_id = self.kwargs["categoria_id"]
         return (
-            Producto.objects
-            .filter(categoria_id=categoria_id)
+            Producto.objects.filter(categoria_id=categoria_id)
+            .only(
+                "id",
+                "nombre",
+                "precio",
+                "descripcion",
+                "imagen",
+                "categoria_id",
+                "orden",
+                "destacado",
+            )
             .select_related("categoria")
             .order_by("orden", "-destacado", "nombre")
         )
