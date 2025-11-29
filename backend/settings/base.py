@@ -83,9 +83,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "backend.wsgi.application"
-
 # =========================================
-# 🗄 BASE DE DATOS (LOCAL + PRODUCCIÓN)
+# BASE DE DATOS (LOCAL + PRODUCCIÓN)
 # =========================================
 if DEBUG:
     DATABASES = {
@@ -98,18 +97,19 @@ else:
     DATABASES = {
         "default": dj_database_url.config(
             default=config("DATABASE_URL"),
-            conn_max_age=600,           # Mantiene la conexión pooling estable
+            conn_max_age=600,      # Mantiene conexiones estables
             ssl_require=True
         )
     }
 
-# Ajustes específicos para Neon + PgBouncer
+# Ajustes ESPECIALES para Neon + PgBouncer (psycopg2)
 if not DEBUG:
     DATABASES["default"]["OPTIONS"] = {
         "sslmode": "require",
-        "prepared_statements": False,   # CRÍTICO para Neon / PgBouncer
+        "prepared_statements": False,   # CRÍTICO para Neon
         "connect_timeout": 10,
     }
+
 
 
 # =========================================
