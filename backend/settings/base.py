@@ -101,14 +101,11 @@ else:
             ssl_require=True,
         )
     }
+DATABASES["default"]["OPTIONS"] = {
+    "sslmode": "require",
+    "connect_timeout": 10,
+}
 
-# Ajustes ESPECIALES para Neon + PgBouncer (psycopg2)
-if not DEBUG:
-    DATABASES["default"]["OPTIONS"] = {
-        "sslmode": "require",
-        "prepared_statements": False,   # necesario con Neon + pooler
-        "connect_timeout": 10,
-    }
 
 
 
