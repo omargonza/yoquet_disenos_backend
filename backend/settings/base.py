@@ -98,10 +98,19 @@ else:
     DATABASES = {
         "default": dj_database_url.config(
             default=config("DATABASE_URL"),
-            conn_max_age=600,
-            ssl_require=True 
+            conn_max_age=600,           # Mantiene la conexión pooling estable
+            ssl_require=True
         )
     }
+
+# Ajustes específicos para Neon + PgBouncer
+if not DEBUG:
+    DATABASES["default"]["OPTIONS"] = {
+        "sslmode": "require",
+        "prepared_statements": False,   # CRÍTICO para Neon / PgBouncer
+        "connect_timeout": 10,
+    }
+
 
 # =========================================
 # 🔐 VALIDADORES DE PASSWORD
